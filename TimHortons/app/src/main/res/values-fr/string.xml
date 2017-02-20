@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Application Title.[char limit = 12]-->
+    <string name="app_name">Tim Hortons</string>
+    <!--Name of customer[char limit = 20]-->
+    <string name="name">Ton petit nom: </string>
+    <!--Whipped cream or not?[char limit = 20]-->
+    <string name="whipped_cream">Creme fouette</string>
+    <!--Chocolate or not?[char limit = 20]-->
+    <string name="chocolate">Chocolat</string>
+    <!--Thank you message to end order summary[char limit = 20]-->
+    <string name="thank_you">Merci!</string>
+
+    <!-- [char limit = x]-->
+    <!-- Name of order summary, format is Name:Amy [char limit = 20]-->
+    <string name="order_summary_name">
+        Nom: <xliff:g id="name" example="Amy">%s</xliff:g>
+    </string>
+    <!-- Quantity of cups being ordered, format is Quantity:2 [char limit = 20]-->
+    <string name="order_summary_quantity">
+        Quantité: <xliff:g id="quantity" example="2">%s</xliff:g>
+    </string>
+    <!--
+        Prix ​​final de l'ordre , la taille est Prix: 10 $ [char limit = 20]
+    -->
+    <string name="order_summary_price">
+        Total: <xliff:g id="price" example="$10">%s</xliff:g>
+    </string>
+    <!--
+        Ajouter un message à la crème fouettée ,
+        le format est Ajouter la crème fouettée : false [char limit = 20]
+    -->
+    <string name="order_summary_add_whipped_cream">
+        Avec une creme fouette? : <xliff:g id="addWhippedCream" example="false">%s</xliff:g>
+    </string>
+    <!--
+        Ajouter un message au chocolat ,
+        format est Ajouter le chocolat : false [char limit = 20]
+    -->
+    <string name="order_summary_add_chocolate">
+        Avec du chocolat? : <xliff:g id="addChocolate" example="false">%s</xliff:g>
+    </string>
+    <!--
+        Toast lorsque les commandes des clients plus que la quantité appropriée de café[char limit = 20]
+        -->
+    <string name="increment_toast">Vous avez commandé trop de café</string>
+    <!--
+        Toast lorsque les commandes des clients moins la quantité appropriée de café
+    -->
+    <string name="decrement_toast">Vous avez commandé trop peu de café</string>
+    <!--boolean true [char limit = 5]-->
+    <string name="true_">vrai</string>
+    <!--boolean false [char limit = 5]-->
+    <string name="false_">faux</string>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.practice.g_i_arc.timhortons.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:padding="16dp"
+            android:text="Toppings"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/checkbox_whipped_cream"
+            style="@style/WrapperStyle"
+            android:onClick="toppings"
+            android:paddingLeft="24dp"
+            android:text="Whipped Cream"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_chocolate"
+            style="@style/WrapperStyle"
+            android:onClick="toppings"
+            android:paddingLeft="24dp"
+            android:text="Chocolate"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:padding="16dp"
+            android:text="Quantity"
+            android:textColor="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/quantity"
+            style="@style/WrapperStyle">
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                style="@style/WrapperStyle"
+                android:padding="16dp"
+                android:text="0 "
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/quantity_text_view"
+                android:onClick="increment"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/plus"
+                android:layout_toRightOf="@+id/quantity_text_view"
+                android:onClick="decrement"
+                android:text="-" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginTop="16dp"
+            android:text="Order Summary"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Free"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitOrder"
+            android:text="Order" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cup_image_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/coffee_cup" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="drinkTea"
+                android:text="Drink Tea" />
+
+            <Button
+                android:id="@+id/coffee_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="drinkCoffee"
+                android:text="Drink Coffee" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

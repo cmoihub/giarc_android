@@ -1,0 +1,42 @@
+<resources>
+    <!--Application Title.[char limit = 12]-->
+    <string name="app_name">Tim Hortons</string>
+    <!--Name of customer[char limit = 20]-->
+    <string name="name">Name: </string>
+    <!--Whipped cream or not?[char limit = 20]-->
+    <string name="whipped_cream">Add Whipped Cream?</string>
+    <!--Chocolate or not?[char limit = 20]-->
+    <string name="chocolate">Add Chocolate?</string>
+    <!--Thank you message to end order summary[char limit = 20]-->
+    <string name="thank_you">Thank You!</string>
+
+    <!-- [char limit = x]-->
+    <!-- Name of order summary, format is Name:Amy [char limit = 20]-->
+    <string name="order_summary_name">
+        Name: <xliff:g id="name" example="Amy">%s</xliff:g>
+    </string>
+    <!-- Quantity of cups being ordered, format is Quantity:2 [char limit = 20]-->
+    <string name="order_summary_quantity">
+        Quantity: <xliff:g id="quantity" example="2">%s</xliff:g>
+    </string>
+    <!-- Final price of order, format is Price:$10 [char limit = 20]-->
+    <string name="order_summary_price">
+        Price: <xliff:g id="price" example="$10">%s</xliff:g>
+    </string>
+    <!-- Add whipped cream message, format is Add whipped cream?:false [char limit = 20]-->
+    <string name="order_summary_add_whipped_cream">
+        Add whipped cream: <xliff:g id="addWhippedCream" example="false">%s</xliff:g>
+    </string>
+    <!-- Add chocolate message, format is Add chocolate?:false [char limit = 20]-->
+    <string name="order_summary_add_chocolate">
+        Add chocolate: <xliff:g id="addChocolate" example="false">%s</xliff:g>
+    </string>
+    <!-- Toast for when customer orders more than appropriate amount of coffee[char limit = 20]-->
+    <string name="increment_toast">You're ordering too much coffee</string>
+    <!-- Toast for when customer orders less than appropriate amount of coffee[char limit = 20]-->
+    <string name="decrement_toast">You're ordering too little coffee</string>
+    <!--boolean true [char limit = 5]-->
+    <string name="true_">true</string>
+    <!--boolean false [char limit = 5]-->
+    <string name="false_">false</string>
+</resources>
